@@ -1,0 +1,151 @@
+/*Colour Set*/
+:root {
+  --primary-color: #57E4ED;
+  --secondary-color: ;
+  --tirtary-color: #fff;
+  --backdrop-color: #1F1F1F;
+  --diamond-size:280px;
+  --diamondSmall-size:245px;
+}
+
+/*Backgrounds*/
+body {
+  background-color: var(--backdrop-color);
+}
+
+/*General Font Styling*/
+h1,
+h2,
+h3,
+h4 {
+  color: #57E4ED;
+}
+
+h4,
+h5,
+h6,
+p {
+  color: var(--tirtary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+  filter: brightness(50%);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/*Block Specific*/
+/*Navbar*/
+.navbar .nav-link {
+  color: var(--primary-color);
+}
+
+/*Hero*/
+#hero h2 {
+  color: var(--tirtary-color);
+  text-transform: uppercase;
+  margin: 0;
+  top: -.5rem;
+  position: relative;
+  line-height: 3rem;
+  font-size: 3.5rem;
+}
+
+#hero .diamond {
+  width: var(--diamond-size);
+  height: var(--diamond-size);
+  background: transparent;
+  margin-left: var(--diamond-size);
+  /* Rotate */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  position: absolute;
+  border: solid white 1px;
+}
+#hero .diamond .dottedDiamond{
+  width: var(--diamondSmall-size);
+  height: var(--diamondSmall-size);
+  background: transparent;
+  margin-left: 5px;
+  margin-top: 15px;
+  position: absolute;
+  border: dashed white 1px;
+}
+
+#hero .diamondText{
+  z-index: 2;
+}
+
+
+/*Services*/
+#services h2 {
+  text-transform: capitalize;
+}
+
+/*Gallery*/
+#gallery .item img{
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+/*Contact*/
+#contact iframe {
+  min-width: 100%;
+  min-height: 400px;
+}
+
+.socialIcons .btn {
+  font-size: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.socialIcons {
+  list-style: none;
+  padding: 0;
+}
+
+.socialIcons li {
+  display: inline;
+  font-size: 2rem;
+  margin-right: .5rem;
+}
+
+.btn-primary {
+  border: none;
+  background: var(--primary-color);
+  transition: all .3s ease-in-out;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--primary-color);
+}
